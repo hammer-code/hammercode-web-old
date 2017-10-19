@@ -1,0 +1,18 @@
+.navigation {
+  float: right;
+}
+
+.navigation ul {
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.navigation ul li a {
+  padding: 6px;
+  color: #fff;
+  text-decoration: none;
+}
