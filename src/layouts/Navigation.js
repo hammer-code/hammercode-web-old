@@ -13,6 +13,11 @@ const Navigation = ({ t }) => (
         </Link>
       </li>
       <li>
+        <a rel="nooopener" target="_blank" href="https://medium.com/hammercode">
+          Blog
+        </a>
+      </li>
+      <li>
         <Link to="/communities">
           {t('communities')}
         </Link>

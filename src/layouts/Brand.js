@@ -9,7 +9,6 @@ const Brand = ({ location }) => {
     <Link
       to="/"
       style={{
-        color: 'white',
         fontSize: 18,
         textDecoration: 'none',
       }}

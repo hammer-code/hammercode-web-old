@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { translate } from 'react-i18next';
 
+import './LanguageSwitcher.css';
+
 class LanguageSwitcher extends Component {
 
   constructor(props) {

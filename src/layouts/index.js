@@ -13,10 +13,19 @@ import './index.css'
 const Header = () => (
   <div
     style={{
-      background: '#1d2129',
       marginBottom: '1.45rem',
     }}
   >
+    <div
+      style={{
+        margin: '0 auto',
+        maxWidth: 960,
+        padding: '0.5rem 1.0875rem',
+      }}
+      className="clearfix"
+    >
+      <LanguageSwitcher />
+    </div>
     <div
       style={{
         margin: '0 auto',
@@ -27,7 +36,6 @@ const Header = () => (
     >
       <Brand />
       <Navigation />
-      <LanguageSwitcher />
     </div>
   </div>
 )
