@@ -1,0 +1,23 @@
+.post {
+  
+}
+
+.post__title {
+  margin: 0;
+}
+
+.post__date, .post__author {
+  font-size: 14px;
+}
+
+.post__author {
+  margin-top: 5px;
+}
+
+.post__date {
+  margin-bottom: 3px;
+}
+
+.post hr {
+  margin: 15px 0;
+}

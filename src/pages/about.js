@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { translate } from 'react-i18next';
 
-const AboutPage = () => (
-  <div>
-    <h1>About Page</h1>
-    <Link to="/">Go back to the homepage</Link>
+const AboutPage = ({ t }) => (
+  <div className="container">
+    <h1 className="crisp crisp--400">{t('about')}</h1>
+    <p>We will update this page soon</p>
   </div>
 )
 
-export default AboutPage
+export default translate('translations')(AboutPage)

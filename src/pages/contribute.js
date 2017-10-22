@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { translate } from 'react-i18next';
 
-const ContributePage = () => (
-  <div>
-    <h1>Contribute</h1>
-    <Link to="/">Go back to the homepage</Link>
+const ContributePage = ({ t }) => (
+  <div className="container">
+    <h1 className="crisp crisp--400">{t('contribute')}</h1>
+    <p>We will update this page soon</p>
   </div>
 )
 
-export default ContributePage
+export default translate('translations')(ContributePage)

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 
 html {
   font-family: sans-serif;
@@ -612,6 +613,22 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+body {
+  line-height: 30px;
+}
+
+.crisp {
+  font-weight: 300;
+}
+
+.crisp--400 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 960px;
 }
 
 .clearfix::after {

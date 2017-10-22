@@ -1,11 +1,22 @@
 import React from 'react'
 
+import './post.css';
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div className="container">
+      <div className="post">
+        <div className="post__date">
+          {post.frontmatter.date}
+        </div>
+        <h1 className="post__title">{post.frontmatter.title}</h1>
+        <div className="post__author">
+          Oleh: {post.frontmatter.author}
+        </div>
+        <hr />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </div>
   )
 }
@@ -16,6 +27,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

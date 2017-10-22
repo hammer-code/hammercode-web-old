@@ -1,21 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { translate } from 'react-i18next';
 
-const NewsPage = ({ data }) => (
-  <div>
-    <h1>News</h1>
+const NewsPage = ({ t, data }) => (
+  <div className="container">
+    <h1 className="crisp crisp--400">{t('news')}</h1>
     <ul>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <li key={index}>
-          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          <Link to={node.fields.slug}>{node.frontmatter.date} - {node.frontmatter.title}</Link>
         </li>
       ))}
     </ul>
-    <Link to="/">Go back to the homepage</Link>
   </div>
 )
 
-export default NewsPage
+export default translate('translations')(NewsPage)
 
 export const query = graphql`
   query NewsQuery {
@@ -26,6 +26,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            date(formatString: "MMMM DD, YYYY")
           }
           fields {
             slug
