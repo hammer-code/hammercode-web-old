@@ -10,15 +10,15 @@ export const communities = [
 ]
 
 export const companies = [
-  { name: 'Palutechnotraining', url: 'https://palutechnotraining.com' },
+  { name: 'Palutechnotraining', url: 'https://palutechnotraining.net' },
   { name: 'Info Sulteng', url: 'https://infosulteng.com' },
   { name: 'Sibang Studio', url: 'http://sibangstudio.com/' },
   { name: 'Banua Mentor', url: 'http://banuamentor.com/' },
   { name: 'Oleh-oleh Sulteng', url: 'http://www.oleholehsulteng.com/' },
-  { name: 'ilmuaringan.com', url: '#' },
+  { name: 'ilmujaringan.com', url: '#' },
   { name: 'Ngana Palu', url: 'https://www.facebook.com/nganapalustudio' },
-  { name: 'Palu Webtion Development', url: '' },
-  { name: 'Bacoding', url: 'https://www.facebook.com/BaCoding6' },
+  { name: 'Palu Webtion Development', url: '#' },
+  { name: 'Bacoding', url: 'http://bacoding.net' },
   { name: 'Text Net', url: '#' },
   { name: 'Kaili Net', url: '#' },
   { name: 'Arta Net', url: '#' }

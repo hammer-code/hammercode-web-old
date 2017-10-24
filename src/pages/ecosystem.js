@@ -11,13 +11,13 @@ const CommunitiesPage = ({ t }) => (
     <h2>Communities</h2>
     <ul>
     {communities.map((c, i) => (
-      <li key={i}><a href={c.url}>{c.name}</a></li>
+      <li key={i}><a target="_blank" rel="noopener" href={c.url}>{c.name}</a></li>
     ))}
     </ul>
     <h2>Startup / Companies</h2>
     <ul>
     {companies.map((c, i) => (
-      <li key={i}><a href={c.url}>{c.name}</a></li>
+      <li key={i}><a target="_blank" rel="noopener" href={c.url}>{c.name}</a></li>
     ))}
     </ul>
   </div>
