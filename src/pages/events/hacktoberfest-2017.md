@@ -2,6 +2,7 @@
 title: "Hacktoberfest 2017"
 date: "2017-10-08"
 author: "Iank"
+venue: "Klinik Kopi Om Dokter"
 ---
 
 Speaker: Handry Wahyudi

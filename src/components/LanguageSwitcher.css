@@ -6,7 +6,7 @@
  .LanguageSwitcher__button {
     background: none;
     border: 0px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
     cursor: pointer;
  }
 

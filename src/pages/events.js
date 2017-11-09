@@ -1,22 +1,43 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import chunk from 'lodash/chunk';
 import { translate } from 'react-i18next';
 
-const EventsPage = ({ t, data }) => (
-  <div className="container">
-    <h1 className="crisp crisp--400">{t('events')}</h1>
-    <ul>
-      {data.allMarkdownRemark.edges.map(({ node }, index) => (
-        <li key={index}>
-          <Link to={node.fields.slug}>{node.frontmatter.date} - {node.frontmatter.title}</Link>
-        </li>
-      ))}
-    </ul>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
-)
+import Footer from '../layouts/Footer';
+import EventCard from '../components/EventCard';
 
-export default translate('translations')(EventsPage)
+const EventsPage = ({ t, data }) => {
+  const chunkedEvents = chunk(data.allMarkdownRemark.edges, 3);
+
+  return (
+    <div id="event-page">
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12">  
+            <h1 className="crisp crisp--400">{t('events')}</h1>
+          </div>
+        </div>
+        {chunkedEvents.map((row, i) => (
+          <div className="row" key={i}>
+            {row.map(({ node }, j) => (
+              <div className="col-xs-4">
+                <EventCard
+                  key={j}
+                  link={node.fields.slug}
+                  date={node.frontmatter.date}
+                  title={node.frontmatter.title}
+                  venue={node.frontmatter.venue}
+                />
+              </div>
+            ))} 
+          </div>
+        ))}
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
+export default translate('translations')(EventsPage);
 
 export const query = graphql`
   query EventsQuery {
@@ -29,6 +50,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            venue
           }
           fields {
             slug

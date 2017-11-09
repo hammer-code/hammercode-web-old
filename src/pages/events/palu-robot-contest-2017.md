@@ -2,6 +2,7 @@
 title: "Palu Robot Contest 2017"
 date: "2017-10-15"
 author: "Arif Suganda"
+venue: "SMA Terpadu Madani"
 ---
 
 Tempat: SMA Negeri Terpadu Madani Palu
