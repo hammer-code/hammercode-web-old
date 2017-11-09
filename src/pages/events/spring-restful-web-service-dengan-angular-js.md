@@ -1,6 +1,6 @@
 ---
-title: "Intro To Spring Framework And Java"
-date: "2017-12-05"
+title: "Spring RESTful Web Service dengan AngularJS"
+date: "2017-12-07"
 author: "Muhammad Rizki Rijal"
 ---
 
@@ -8,5 +8,6 @@ Speaker: Ucup Timposu
 
 Tanggal: 5 November 2017
 
-Link: [https://www.facebook.com/events/132003927525586](https://www.facebook.com/events/132003927525586)
+Jam: 7 Malam
 
+Tempat: Belum diketahui, akan diupdate
