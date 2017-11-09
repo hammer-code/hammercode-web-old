@@ -3,6 +3,7 @@ title: "Intro Pemanfaatan dan Implementasi Web Service"
 date: "2017-11-12"
 author: "Muhammad Rizki Rijal"
 venue: "Wifi ID Corner Juanda"
+image: "https://scontent-sin6-2.xx.fbcdn.net/v/t31.0-8/23157035_670741099980125_4436652561490219676_o.jpg?oh=ee70ebccbf623791ca9085571d7868bc&oe=5A9AFDB2"
 ---
 
 Speaker: Sofyan Saputra

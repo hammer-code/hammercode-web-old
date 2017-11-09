@@ -1,21 +1,26 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 import { translate } from 'react-i18next';
 
-const NewsPage = ({ t, data }) => (
-  <div className="container">
-    <h1 className="crisp crisp--400">{t('news')}</h1>
-    <ul>
-      {data.allMarkdownRemark.edges.map(({ node }, index) => (
-        <li key={index}>
-          <Link to={node.fields.slug}>{node.frontmatter.date} - {node.frontmatter.title}</Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-)
+import Footer from '../layouts/Footer';
 
-export default translate('translations')(NewsPage)
+const NewsPage = ({ t, data }) => (
+  <div id="news-page">
+    <div className="container">
+      <h1 className="crisp crisp--400">{t('news')}</h1>
+      <div>
+        {data.allMarkdownRemark.edges.map(({ node }, index) => (
+          <div style={{ marginBottom: 20 }} key={index}>
+            <Link to={node.fields.slug}>{node.frontmatter.date} - {node.frontmatter.title}</Link>
+          </div>
+        ))}
+      </div>
+    </div>
+    <Footer />
+  </div>
+);
+
+export default translate('translations')(NewsPage);
 
 export const query = graphql`
   query NewsQuery {

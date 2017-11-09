@@ -26,6 +26,7 @@ const EventsPage = ({ t, data }) => {
                   date={node.frontmatter.date}
                   title={node.frontmatter.title}
                   venue={node.frontmatter.venue}
+                  imageUrl={node.frontmatter.image}
                 />
               </div>
             ))} 
@@ -51,6 +52,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             venue
+            image
           }
           fields {
             slug

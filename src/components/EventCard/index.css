@@ -8,6 +8,8 @@
 .event-card__img-wrapper {
   min-height: 140px;
   background: #ccc;
+  background-size: cover;
+  background-position: center center;
 }
 
 .event-card__img-wrapper img {
