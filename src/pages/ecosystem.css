@@ -2,6 +2,8 @@
   background: none;
   border: 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
+  padding: 0;
+  margin-right: 10px;
 }
 
 .content-tab__tab--active {
@@ -16,4 +18,28 @@
 
 .content-tab__content {
   margin-top: 30px;
+}
+
+.ecosystem-card {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
+  transition: box-shadow .2s cubic-bezier(0,.2,.4,1);
+}
+
+.ecosystem-card:hover {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+}
+
+.ecosystem-card__title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #666A73;
+}
+
+.ecosystem-card__description {
+  line-height: 22px;
+  font-size: 14px;
 }

@@ -1,14 +1,35 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import chunk from 'lodash/chunk';
 import classnames from 'classnames';
 import { translate } from 'react-i18next';
 
-import { communities, companies } from '../data/communities';
+import Footer from '../layouts/Footer';
+import companies from '../data/companies';
+import communities from '../data/communities';
 
 import './ecosystem.css';
 
 const COMMUNITIES_TAB = 1;
 const COMPANIES_TAB = 2;
+
+const chunkedCompanies = chunk(companies, 3);
+const chunkedCommunities = chunk(communities, 3);
+
+function Card ({
+  name,
+  url,
+  description,
+}) {
+  return (
+    <div className="ecosystem-card">
+      <h2 className="ecosystem-card__title"><a target="_blank" rel="noopener" href={url}>{name}</a></h2>
+      <div className="ecosystem-card__description">
+        {description}
+      </div>
+    </div>
+  );
+}
 
 class ContentTab extends React.Component {
   constructor(props) {
@@ -23,21 +44,37 @@ class ContentTab extends React.Component {
   render() {
     const communitiesEl = (
       <div className="content-tab__content">
-        <ul>
-        {communities.map((c, i) => (
-          <li key={i}><a target="_blank" rel="noopener" href={c.url}>{c.name}</a></li>
+        {chunkedCommunities.map((row, i) => (
+          <div className="row">
+            {row.map((c, i) => (
+              <div className="col-xs-4">
+                <Card
+                  name={c.name}
+                  url={c.url}
+                  description={c.description}
+                />
+              </div>
+            ))}
+          </div>
         ))}
-        </ul>
       </div>
     );
 
     const companiesEl = (
       <div className="content-tab__content">
-        <ul>
-        {companies.map((c, i) => (
-          <li key={i}><a target="_blank" rel="noopener" href={c.url}>{c.name}</a></li>
+        {chunkedCompanies.map((row, i) => (
+          <div className="row">
+            {row.map((c, i) => (
+              <div className="col-xs-4">
+                <Card
+                  name={c.name}
+                  url={c.url}
+                  description={c.description}
+                />
+              </div>
+            ))}
+          </div>
         ))}
-        </ul>
       </div>
     );
 
@@ -76,10 +113,13 @@ class ContentTab extends React.Component {
 }
 
 const CommunitiesPage = ({ t }) => (
-  <div className="container">
-    <h1 className="crisp crisp--400">{t('ecosystem')}</h1>
-    <p>Berikut adalah daftar komunitas dan perusahaan teknologi yang ada di Palu</p>
-    <ContentTab />
+  <div id="ecosystem-page">
+    <div className="container">
+      <h1 className="crisp crisp--400">{t('ecosystem')}</h1>
+      <p>Berikut adalah daftar komunitas dan perusahaan teknologi yang ada di Palu</p>
+      <ContentTab />
+    </div>
+    <Footer />
   </div>
 );
 

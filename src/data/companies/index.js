@@ -1,0 +1,16 @@
+export default [
+  require('./artha-net'),
+  require('./bacoding'),
+  require('./banua-mentor'),
+  require('./baregistrasi'),
+  require('./ilmu-jaringan'),
+  require('./info-sulteng'),
+  require('./kaili-net'),
+  require('./ngana'),
+  require('./oos'),
+  require('./ptt'),
+  require('./rotasi'),
+  require('./sibang'),
+  require('./text-net'),
+  require('./webtion'),
+];
