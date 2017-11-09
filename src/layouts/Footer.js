@@ -11,13 +11,18 @@ const Footer = () => (
           <h3>Gabung Bersama Kami</h3>
           <ul className="social-links">
             <li className="item">
-              <a target="_blank" rel="noopener" href="https://www.facebook.com/hammercodepalu/">
-                Facebook
+              <a title="Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/hammercodepalu/">
+                <i className="fa fa-facebook" />
               </a>
             </li>
             <li className="item">
-              <a target="_blank" rel="noopener" href="https://medium.com/hammercode">
-                Medium
+              <a title="Medium" target="_blank" rel="noopener" href="https://medium.com/hammercode">
+                <i className="fa fa-medium" />
+              </a>
+            </li>
+            <li className="item">
+              <a title="Github" target="_blank" rel="noopener" href="https://github.com/hammer-code">
+                <i className="fa fa-github" />
               </a>
             </li>
           </ul>

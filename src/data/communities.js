@@ -21,5 +21,6 @@ export const companies = [
   { name: 'Bacoding', url: 'http://bacoding.net' },
   { name: 'Text Net', url: '#' },
   { name: 'Kaili Net', url: '#' },
-  { name: 'Arta Net', url: '#' }
+  { name: 'Arta Net', url: '#' },
+  { name: 'Rotasi Studio', url: 'https://www.facebook.com/rotasistudio' },
 ]
