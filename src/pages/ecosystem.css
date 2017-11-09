@@ -1,0 +1,19 @@
+.content-tab__tab {
+  background: none;
+  border: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.content-tab__tab--active {
+  color: #4566a8;
+  font-weight: bold;
+  border-bottom: 2px solid #4566a8;
+}
+
+.content-tab__tab:focus, .content-tab__tab:active {
+  outline: none;
+}
+
+.content-tab__content {
+  margin-top: 30px;
+}
