@@ -91,13 +91,13 @@ class ContentTab extends React.Component {
             className={companiesButtonClasses}
             onClick={() => this.setActiveTab(COMPANIES_TAB)}
           >
-            Companies
+            Perusahaan
           </button>
           <button 
             className={communitiesButtonClasses}
             onClick={() => this.setActiveTab(COMMUNITIES_TAB)}
           >
-            Communities
+            Komunitas
           </button>
         </div>
         {(() => {

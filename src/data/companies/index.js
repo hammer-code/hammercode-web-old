@@ -3,6 +3,8 @@ export default [
   require('./bacoding'),
   require('./banua-mentor'),
   require('./baregistrasi'),
+  require('./carry'),
+  require('./fatech'),
   require('./ilmu-jaringan'),
   require('./info-sulteng'),
   require('./kaili-net'),
