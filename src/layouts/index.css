@@ -617,6 +617,8 @@ pre tt:after {
 }
 
 body {
+  font-size: 18px;
+  line-height: 24px;
   line-height: 30px;
   background: #f8f8fa;
 }

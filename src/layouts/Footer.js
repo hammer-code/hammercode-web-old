@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="container">
       <div className="row">
         <div className="col-xs-12 col-sm-3">
-          <h3>Gabung Bersama Kami</h3>
+          <h3>Sosial Media</h3>
           <ul className="social-links">
             <li className="item">
               <a title="Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/hammercodepalu/">

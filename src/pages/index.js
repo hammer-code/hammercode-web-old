@@ -10,7 +10,6 @@ const IndexPage = ({ data }) => (
     <section id="hero">
       <div className="container">
         <h2>Menumbuhkan Lebih Banyak Problem-solver</h2>
-        <p>Berbagi dan Bersinergi</p>
       </div>
     </section>
     <section id="the-problem">
@@ -18,7 +17,7 @@ const IndexPage = ({ data }) => (
         <div className="row">
           <div className="col-xs-12 col-sm-6">
             <h3 className="crisp crisp--400">Permasalahan</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <p>Teknologi semakin berkembang, namun sumber daya di Kota Palu masih sangat belum siap untuk menggunakan teknologi sebagai sarana untuk memecahkan permasalahan di dearah, maupun untuk bersaing di dunia kerja.</p>
           </div>
         </div>
       </div>
@@ -28,7 +27,7 @@ const IndexPage = ({ data }) => (
         <div className="row">
           <div className="col-xs-12 col-sm-6">
             <h3 className="crisp crisp--400">Visi Kami</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <p>Kami percaya pengetahuan tentang teknologi merupakan hak semua orang. Dan teknologi adalah alat untuk mempermudah pemecahan suatu masalah dan untuk menciptakan kesempatan bagi hal layak luas. Dengan menyamakan tingkat pengetahuan dengan kota besar di dunia, akan membawa perubahan besar di kota Kami.</p>
           </div>
         </div>
       </div>
