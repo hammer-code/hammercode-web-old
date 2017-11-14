@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'gatsby-link';
 import { translate } from 'react-i18next';
 
 import Footer from '../layouts/Footer';
@@ -43,7 +44,7 @@ const ContributePage = ({ t }) => (
           <p>
             Melalui donasi dan sponsorship, Anda memberikan Kami kesempatan untuk tetap melakukan kegiatan-kegiatan
             pelatihan gratis, seperti <a href="https://hammer-code.github.io/terbit" rel="noopener" target="_blank">kelas Bootcamp
-            Web Development intensif</a> dan kelas Web Development Reguler mingguan.
+            Web Development intensif</a> dan kelas Web Development Reguler mingguan, juga <Link to="/events">event bulanan kami</Link>.
           </p>
         </div>
       </div>

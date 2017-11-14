@@ -12,14 +12,14 @@ const EventsPage = ({ t, data }) => {
     <div id="event-page">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12">  
+          <div className="col-xs-12">
             <h1 className="crisp crisp--400">{t('events')}</h1>
           </div>
         </div>
         {chunkedEvents.map((row, i) => (
           <div className="row" key={i}>
             {row.map(({ node }, j) => (
-              <div className="col-xs-4">
+              <div key={j} className="col-xs-4">
                 <EventCard
                   key={j}
                   link={node.fields.slug}
@@ -29,7 +29,7 @@ const EventsPage = ({ t, data }) => {
                   imageUrl={node.frontmatter.image}
                 />
               </div>
-            ))} 
+            ))}
           </div>
         ))}
       </div>
