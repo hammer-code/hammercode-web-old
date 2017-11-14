@@ -1,0 +1,27 @@
+.team-member-card {
+  margin: 15px 0;
+  padding: 15px;
+  text-align: center;
+}
+
+.team-member-card__photo {
+  background: #ccc;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.team-member-card__name {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 25px 0 18px;
+}
+
+.team-member-card__role {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+}

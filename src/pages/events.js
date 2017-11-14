@@ -14,6 +14,7 @@ const EventsPage = ({ t, data }) => {
         <div className="row">
           <div className="col-xs-12">
             <h1 className="crisp crisp--400">{t('events')}</h1>
+            <p>Daftar acara tentang teknologi di Palu</p>
           </div>
         </div>
         {chunkedEvents.map((row, i) => (

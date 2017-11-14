@@ -11,12 +11,13 @@ const ContributePage = ({ t }) => (
     <div className="container">
       <div className="row">
         <div className="col-xs-12">
-          <h1 className="crisp crisp--400">{t('contribute')}</h1>
-          <h2>Bantu Kami Untuk Meluaskan Teknologi</h2>
+          <h1 className="crisp crisp--400">Bantu Kami Untuk Meluaskan Teknologi</h1>
           <p>Bersama Kita bisa memperluas pengetahuan dan penerapan teknologi terkini. Anda bisa memberikan bantuan berupa keahlian, tenaga, waktu dan finansial.</p>
           <p>Kami akan sangat senang bila Anda <a href="mailto:hello@hammercode.id">ingin berbincang-bincang dengan Kami</a>.</p>
         </div>
       </div>
+
+      <br />
 
       <div className="row">
         <div className="col-xs-12">
@@ -28,15 +29,17 @@ const ContributePage = ({ t }) => (
                   className="partner-card__image"
                   style={{ backgroundImage: 'url(http://maleotechnocenter.com/wp-content/uploads/2015/12/ibtimaleo.jpg)'}}
                 ></div>
-                <div className="partner-card__name">
+                <h3 className="partner-card__name">
                   <a href="http://maleotechnocenter.com" rel="noopener" target="_blank">IBTI Maleo Techo Center</a>
-                </div>
+                </h3>
                 <div className="partner-card__role">Business Incubator Partner</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <br />
 
       <div className="row">
         <div className="col-xs-12">

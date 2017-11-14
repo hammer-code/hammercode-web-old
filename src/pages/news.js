@@ -8,6 +8,7 @@ const NewsPage = ({ t, data }) => (
   <div id="news-page">
     <div className="container">
       <h1 className="crisp crisp--400">{t('news')}</h1>
+      <p>Semua berita tentang perkembangan teknologi dan komunitas di Palu</p>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
           <div style={{ marginBottom: 20 }} key={index}>

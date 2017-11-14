@@ -45,9 +45,9 @@ class ContentTab extends React.Component {
     const communitiesEl = (
       <div className="content-tab__content">
         {chunkedCommunities.map((row, i) => (
-          <div className="row">
-            {row.map((c, i) => (
-              <div className="col-xs-4">
+          <div key={i} className="row">
+            {row.map((c, j) => (
+              <div key={j} className="col-xs-4">
                 <Card
                   name={c.name}
                   url={c.url}
@@ -63,9 +63,9 @@ class ContentTab extends React.Component {
     const companiesEl = (
       <div className="content-tab__content">
         {chunkedCompanies.map((row, i) => (
-          <div className="row">
-            {row.map((c, i) => (
-              <div className="col-xs-4">
+          <div key={i} className="row">
+            {row.map((c, j) => (
+              <div key={j} className="col-xs-4">
                 <Card
                   name={c.name}
                   url={c.url}
@@ -93,7 +93,7 @@ class ContentTab extends React.Component {
           >
             Perusahaan
           </button>
-          <button 
+          <button
             className={communitiesButtonClasses}
             onClick={() => this.setActiveTab(COMMUNITIES_TAB)}
           >

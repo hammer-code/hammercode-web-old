@@ -37,9 +37,12 @@
   margin-top: 0;
   margin-bottom: 10px;
   color: #666A73;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .ecosystem-card__description {
   line-height: 22px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
 }

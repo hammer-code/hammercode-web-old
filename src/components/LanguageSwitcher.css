@@ -1,8 +1,9 @@
  .LanguageSwitcher {
     float: right;
     font-size: 14px;
+    font-weight: 400;
  }
- 
+
  .LanguageSwitcher__button {
     background: none;
     border: 0px;
