@@ -10,6 +10,7 @@ export default [
   require('./kaili-net'),
   require('./ngana'),
   require('./oos'),
+  require('./psc'),
   require('./ptt'),
   require('./rotasi'),
   require('./sibang'),
