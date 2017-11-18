@@ -10,6 +10,7 @@ const IndexPage = ({ data }) => (
     <section id="hero">
       <div className="container">
         <h2>Menumbuhkan Lebih Banyak Problem-solver</h2>
+        <p>#ubahdengankode #palulembahteknologi</p>
       </div>
     </section>
     <section id="the-problem">

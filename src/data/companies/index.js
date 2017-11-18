@@ -5,6 +5,7 @@ export default [
   require('./baregistrasi'),
   require('./carry'),
   require('./fatech'),
+  require('./hallomart'),
   require('./ilmu-jaringan'),
   require('./info-sulteng'),
   require('./kaili-net'),
