@@ -116,7 +116,7 @@ const CommunitiesPage = ({ t }) => (
   <div id="ecosystem-page">
     <div className="container">
       <h1 className="crisp crisp--400">{t('ecosystem')}</h1>
-      <p>Berikut adalah daftar komunitas dan perusahaan teknologi yang ada di Palu</p>
+      <p>Berikut adalah daftar komunitas dan perusahaan teknologi yang ada di Palu. Jika perusahaan atau komunitasmu ingin masuk daftar ini, <a href="mailto:arkinthesky.69@gmail.com">silakan hubungi kami</a>.</p>
       <ContentTab />
     </div>
     <Footer />

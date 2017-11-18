@@ -1,4 +1,6 @@
-export default [
+import shuffle from 'lodash/shuffle';
+
+export default shuffle([
   require('./artha-net'),
   require('./bacoding'),
   require('./banua-mentor'),
@@ -9,6 +11,7 @@ export default [
   require('./ilmu-jaringan'),
   require('./info-sulteng'),
   require('./kaili-net'),
+  require('./komunitaz'),
   require('./ngana'),
   require('./oos'),
   require('./psc'),
@@ -17,4 +20,4 @@ export default [
   require('./sibang'),
   require('./text-net'),
   require('./webtion'),
-];
+]);

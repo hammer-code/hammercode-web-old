@@ -12,7 +12,7 @@ const AboutPage = ({ t }) => (
         <div className="col-xs-12">
           <h1 className="crisp crisp--400">{t('about')}</h1>
           <p>
-            Kami ingin menjadi tempat bersua untuk perusahaan, komunitas, penggiat teknologi di Palu. Sekarang ini, kegiatan kami meliputi:
+            Kami adalag ingin menjadi tempat bersua untuk perusahaan, komunitas, penggiat teknologi di Palu. Kami senang berbagi dan belajar dari satu sama lainnya. Kami memiliki kegiatan-kegiatan yang bermanfaat <b>tanpa dipungut biaya</b> atau <b>gratis</b>, meliputi:
             techtalk bulanan, kelas web development reguler dan intensif. Kami juga berkeinginan untuk dapat mengadakan workshop dengan pemateri praktisi / professional
             serta menggelar konferensi teknologi tahunan.
           </p>
