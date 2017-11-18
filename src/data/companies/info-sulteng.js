@@ -1,5 +1,5 @@
-export default { 
+export default {
   name: 'Info Sulteng',
   url: 'https://infosulteng.com',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum provident blanditiis!',
+  description: 'Infosulteng.com adalah WADAH untuk berbagi informasi seputar Sulawesi Tengah.',
 };

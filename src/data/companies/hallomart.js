@@ -1,5 +1,5 @@
 export default {
   name: 'Hallomart',
   url: 'https://www.facebook.com/HalloMart/',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum provident blanditiis!',
+  description: 'Platform daily deals berbasis di Palu yang berfokus untuk membantu pelaku usaha lokal dalam penerapan strategi O2O.',
 }

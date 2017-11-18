@@ -1,5 +1,5 @@
 export default {
   name: 'Sibang Studio',
   url: 'http://sibangstudio.com/',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum provident blanditiis!',
+  description: 'SibangStudio  merupakan unit usaha yang bergerak dibidang jasa Teknologi Informasi (TI) yang berupa pengembang software beserta aplikasi pendukung lainnya.',
 };
