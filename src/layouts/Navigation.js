@@ -6,7 +6,7 @@ import './Navigation.css'
 
 const Navigation = ({ t }) => (
   <nav className="navigation">
-    <ul>
+    <ul className="hidden-xs">
       <li>
         <Link to="/news">
           {t('news')}

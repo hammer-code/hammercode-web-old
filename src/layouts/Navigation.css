@@ -13,7 +13,8 @@
 }
 
 .navigation ul li a {
-  padding: 6px 20px;
-  color: #1d2129;
+  font-size: 15px;
+  padding: 0 12px;
+  color: #4b4f56;
   text-decoration: none;
 }

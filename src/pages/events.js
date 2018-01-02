@@ -2,14 +2,13 @@ import React from 'react';
 import chunk from 'lodash/chunk';
 import { translate } from 'react-i18next';
 
-import Footer from '../layouts/Footer';
 import EventCard from '../components/EventCard';
 
 const EventsPage = ({ t, data }) => {
   const chunkedEvents = chunk(data.allMarkdownRemark.edges, 3);
 
   return (
-    <div id="event-page">
+    <div id="event-page" className="page-content">
       <div className="container">
         <div className="row">
           <div className="col-xs-12">
@@ -34,7 +33,6 @@ const EventsPage = ({ t, data }) => {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   )
 }

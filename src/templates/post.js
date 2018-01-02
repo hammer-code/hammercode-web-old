@@ -1,13 +1,11 @@
 import React from 'react'
 
-import Footer from '../layouts/Footer';
-
 import './post.css';
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div id="post-detail">
+    <div id="post-detail" className="page-content">
       <div className="container">
         <div className="post">
           <div className="post__date">
@@ -21,7 +19,6 @@ export default ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

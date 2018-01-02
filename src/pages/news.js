@@ -2,10 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { translate } from 'react-i18next';
 
-import Footer from '../layouts/Footer';
-
 const NewsPage = ({ t, data }) => (
-  <div id="news-page">
+  <div id="news-page" className="page-content">
     <div className="container">
       <h1 className="crisp crisp--400">{t('news')}</h1>
       <p>Semua berita tentang perkembangan teknologi dan komunitas di Palu</p>
@@ -17,7 +15,6 @@ const NewsPage = ({ t, data }) => (
         ))}
       </div>
     </div>
-    <Footer />
   </div>
 );
 

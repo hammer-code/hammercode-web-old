@@ -1,6 +1,3 @@
-#hero {
-  padding: 120px 0;
-}
 
 #the-problem, #our-vision {
   padding: 40px 0;
@@ -8,8 +5,29 @@
 
 #hero {
   text-align: center;
+  background-image: url(https://statik.tempo.co/data/2016/05/26/id_509646/509646_620.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 160px 0;
+  position: relative;
 }
 
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, .5);
+}
+
+.hero__content {
+  z-index: 3;
+  position: relative;
+}
 
 #events {
   background: #1f222c;

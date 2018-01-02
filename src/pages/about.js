@@ -1,12 +1,10 @@
 import React from 'react';
 import { translate } from 'react-i18next';
 
-import Footer from '../layouts/Footer';
-
 import './about.css';
 
 const AboutPage = ({ t }) => (
-  <div id="about-page">
+  <div id="about-page" className="page-content">
     <div className="container">
       <div className="row">
         <div className="col-xs-12">
@@ -62,7 +60,6 @@ const AboutPage = ({ t }) => (
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 );
 

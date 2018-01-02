@@ -2,8 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { translate } from 'react-i18next';
 
-import Footer from '../layouts/Footer';
-
 import './contribute.css';
 
 const ContributePage = ({ t }) => (
@@ -52,7 +50,6 @@ const ContributePage = ({ t }) => (
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 )
 

@@ -1,16 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-
-import Footer from '../layouts/Footer';
 import './index.css'
 
 const IndexPage = ({ data }) => (
   <div className="home">
     <section id="hero">
+      <div className="hero__overlay"></div>
       <div className="container">
-        <h2>Menumbuhkan Lebih Banyak Problem-solver</h2>
-        <p>#ubahdengankode #palulembahteknologi</p>
+        <div className="hero__content">
+          <h2>Menumbuhkan Lebih Banyak Problem-solver</h2>
+          <p>#ubahdengankode #palulembahteknologi</p>
+        </div>
       </div>
     </section>
     <section id="the-problem">
@@ -48,7 +49,6 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <Footer />
   </div>
 )
 
