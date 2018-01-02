@@ -8,4 +8,5 @@ export default [
   require('./psc2'),
   require('./robotech'),
   require('./timposu'),
+  require('./maleo-robotic'),
 ];

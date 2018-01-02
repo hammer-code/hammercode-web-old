@@ -20,4 +20,6 @@ export default shuffle([
   require('./sibang'),
   require('./text-net'),
   require('./webtion'),
+  require('./click-ad'),
+  require('./nadea-shop'),
 ]);
